@@ -4,7 +4,10 @@ interface IProps {
   children: ReactNode
 }
 
-const ModalTitle = ({children}: IProps) => {
+const ModalTitle = ({
+  children
+}: IProps) => {
+
   return (
     <p>{children}</p>
   )
