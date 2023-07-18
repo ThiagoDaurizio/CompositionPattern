@@ -3,7 +3,27 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/compositions/**/*{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './content/**/*.{md,mdx}'
+  ],
+  safelist: [
+    {
+      pattern: /^grid-cols-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl']
+    },
+    {
+      pattern: /^gap-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl']
+    },
+    {
+      pattern: /^bg-/,
+      variants: ['blue', 'green', 'red']
+    },
+    {
+      pattern: /^text-/,
+      variants: ['blue', 'green', 'red']
+    }
   ],
   theme: {
     extend: {
