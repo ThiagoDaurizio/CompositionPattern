@@ -25,7 +25,7 @@ const NotificationIcon = ({
   const Icon = icons[notificationIcon]
 
   return (
-    <div>
+    <div className='text-emerald-400 w-8 flex justify-center items-center text-2xl'>
       {Icon && (<Icon />)}
     </div>
   )

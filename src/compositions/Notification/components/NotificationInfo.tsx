@@ -6,7 +6,7 @@ interface IProps {
 
 const NotificationInfo = ({ children }: IProps) => {
   return (
-    <div>
+    <div className='bg--500 flex-1'>
       {children}
     </div>
   )

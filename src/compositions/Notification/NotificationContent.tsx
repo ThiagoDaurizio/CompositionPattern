@@ -6,7 +6,7 @@ interface IProps {
 
 const NotificationContent = ({ children }: IProps) => {
   return (
-    <div>
+    <div className='flex justify-between gap-2'>
       {children}
     </div>
   )

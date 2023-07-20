@@ -7,13 +7,21 @@ const tierPallete = {
 
 interface IProps {
   children: ReactNode
-  tier?: 'title' | 'text'
+  textTier: 'title' | 'subtitle'
 }
 
-const NotificationText = ({ children, tier }: IProps) => {
+const NotificationText = ({ children, textTier }: IProps) => {
   return (
     <div className=''>
-      {children}
+      {textTier === 'title' ? 
+        <p className='text-emerald-400 font-semibold text-sm'>
+          {children}
+        </p>
+        :
+        <p className='text-slate-300 font-normal text-xs'>
+          {children}
+        </p>
+      }
     </div>
   )
 }
