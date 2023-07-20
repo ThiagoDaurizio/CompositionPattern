@@ -74,7 +74,7 @@ const ModalSetup = () => {
         <Modal.Header/>
 
         <Modal.Content>
-          Modal advise here
+          JA VOLTO
         </Modal.Content>
 
         <Modal.Footer>
