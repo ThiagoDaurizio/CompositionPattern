@@ -6,7 +6,7 @@ interface IProps {
 
 const ModalContent = ({children}: IProps) => {
   return (
-    <div className='p-2 min-h-[200px] flex justify-center items-center' >
+    <div className='p-2 flex justify-center items-center' >
       {children}
     </div>
   )

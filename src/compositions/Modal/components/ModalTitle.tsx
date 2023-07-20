@@ -9,7 +9,7 @@ const ModalTitle = ({
 }: IProps) => {
 
   return (
-    <p>{children}</p>
+    <p className='font-semibold text-lg text-slate-700'>{children}</p>
   )
 }
 
