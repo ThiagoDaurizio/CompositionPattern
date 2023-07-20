@@ -75,6 +75,8 @@ export default function Home() {
 
     {isOpenedAdvise && 
       (<Modal.Root>
+        <Modal.Header/>
+
         <ModalContent>
           Modal advise here
         </ModalContent>
@@ -89,9 +91,11 @@ export default function Home() {
 
     {isOpenedDecision && 
       (<Modal.Root>
-        <ModalContent>
+        <Modal.Header/>
+
+        <Modal.Content>
           You is alright of this?
-        </ModalContent>
+        </Modal.Content>
 
         <Modal.Footer>
           <Modal.Action color='success' onClick={handleConfirm}>
