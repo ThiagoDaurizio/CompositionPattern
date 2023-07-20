@@ -89,6 +89,29 @@ const handleSave = () => {
           </Notification.Footer>
         </Notification.Root>
       </li>
+
+      <li>
+        <Notification.Root>
+          <Notification.Content>
+            <Notification.Icon notificationIcon='none'/>
+            <Notification.Info>
+              <Notification.Text textTier='title'>
+                GameX on Steam has ready to updates!
+              </Notification.Text>
+            </Notification.Info>
+          </Notification.Content>
+          <Notification.Footer>
+            <Notification.Action
+              color='success'
+              onClick={handleSuccess}
+            />
+            <Notification.Action
+              color='save'
+              onClick={handleSave}
+            />
+          </Notification.Footer>
+        </Notification.Root>
+      </li>
     </ul>
   )
 }
