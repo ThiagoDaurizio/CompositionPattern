@@ -1,9 +1,10 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { Notification } from '@/compositions/Notification'
 
 const NotificationSetup = () => {
+  const [isOpened, set_isOpened] = useState<boolean>(true)
 
 const handleSuccess = () => {
 

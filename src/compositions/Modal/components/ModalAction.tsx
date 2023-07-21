@@ -1,6 +1,13 @@
 'use client'
-import { buttonPalletes } from '@/compositions/colors'
 import React, { ReactNode } from 'react'
+
+export const palletes = {
+  success: 'bg-emerald-400 hover:bg-emerald-400/90',
+  error: 'bg-red-500 hover:bg-red-500/90',
+  warning: 'bg-yellow-500 hover:bg-yellow-500/90',
+  info: 'bg-blue-500 hover:bg-blue-500/90',
+  none: 'bg-transparent'
+}
 
 interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode
@@ -14,7 +21,7 @@ const ModalAction = ({
   color = 'none', 
   onClick
 }: IProps) => {
-  const colorButton = buttonPalletes[color]
+  const colorButton = palletes[color]
 
   return (
     <button
