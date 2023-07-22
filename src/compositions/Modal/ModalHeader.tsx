@@ -7,7 +7,7 @@ interface IProps {
 
 const ModalHeader = ({children}: IProps) => {
   return (
-    <div className='px-2 flex items-center bg-slate-300 h-8' >
+    <div className='px-2 flex items-center bg-slate-600 h-8' >
       {children}
     </div>
   )

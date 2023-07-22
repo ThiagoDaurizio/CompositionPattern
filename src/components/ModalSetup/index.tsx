@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { Modal } from '@/compositions/Modal'
+import FormToModal from '../FormToModal'
 
 
 const ModalSetup = () => {
@@ -50,12 +51,12 @@ const ModalSetup = () => {
       (<Modal.Root>
         <Modal.Header>
           <Modal.Title>
-            Modal Classic Title
+            Modal Classic Example
           </Modal.Title>
         </Modal.Header>
 
         <Modal.Content>
-          Modal content here
+          <FormToModal/>
         </Modal.Content>
 
         <Modal.Footer>
@@ -74,7 +75,7 @@ const ModalSetup = () => {
         <Modal.Header/>
 
         <Modal.Content>
-          JA VOLTO
+          Drink water today!
         </Modal.Content>
 
         <Modal.Footer>
